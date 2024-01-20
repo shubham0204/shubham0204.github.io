@@ -1,0 +1,54 @@
+{
+    "description": "Helping startups and individuals build ML features in their Android apps | Writes ML stories on Medium | Freelancing for Android and ML | ML in Rust, C and C++" , 
+    "blogs": [
+        {
+            "title": "first-blog-title-1" , 
+            "url": "https://medium.com"
+        } , 
+        {
+            "title": "first-blog-title-2" , 
+            "url": "https://medium.com"
+        } , 
+        {
+            "title": "first-blog-title-3" , 
+            "url": "https://medium.com"
+        } 
+    ] , 
+    "projects" : [
+        {
+            "name": "postagger.rs" , 
+            "sub": "sub" , 
+            "desc": "desc" , 
+            "github": "github" , 
+            "blog": ""
+        } , 
+        {
+            "name": "name" , 
+            "sub": "sub" , 
+            "desc": "desc" , 
+            "github": "github" , 
+            "blog": "blog"
+        } , 
+        {
+            "name": "name" , 
+            "sub": "sub" , 
+            "desc": "desc" , 
+            "github": "github" , 
+            "blog": "blog"
+        } , 
+        {
+            "name": "name" , 
+            "sub": "sub" , 
+            "desc": "desc" , 
+            "github": "github" , 
+            "blog": "blog"
+        } , 
+        {
+            "name": "name" , 
+            "sub": "sub" , 
+            "desc": "desc" , 
+            "github": "github" , 
+            "blog": "blog"
+        } 
+    ]
+}
