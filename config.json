@@ -14,41 +14,53 @@
             "url": "https://medium.com"
         } 
     ] , 
+    "work_experience": [
+        {
+            "designation": "Android Development Intern" , 
+            "duration": "Apr 2020 - Jun 2020" ,
+            "desc": "Worked as an Android Development Intern with AjnaLens, a tech startup that creates augmented reality headsets for use in education and defence. Integrated various ML models in Android apps and also improved their efficiency for Android apps. Worked with 3rd-party libraries that would integrate a hardware component with an Android app"
+        } , 
+        {
+            "designation": "Android + ML Developer" , 
+            "duration": "Mar 2020 - Jun 2023" ,
+            "desc": "Built a speech-to-text app that would record calls automatically in an Android app and transcribe them as meeting notes"
+        } , 
+        {
+            "designation": "Android + ML Developer" , 
+            "duration": "Mar 2020 - Jun 2023" ,
+            "desc": "Built a speech-to-text app that would record calls automatically in an Android app and transcribe them as meeting notes"
+        } 
+    ] , 
     "projects" : [
         {
             "name": "postagger.rs" , 
-            "sub": "sub" , 
-            "desc": "desc" , 
-            "github": "github" , 
-            "blog": ""
+            "sub": "Rust, JNI, Java and C" , 
+            "desc": "NLTK inspired Parts-of-Speech Tagger (Perceptron Tagger) in Rust, with wrappers in Java and C" , 
+            "github": "https://github.com/shubham0204/postagger.rs" 
         } , 
         {
             "name": "name" , 
             "sub": "sub" , 
             "desc": "desc" , 
-            "github": "github" , 
-            "blog": "blog"
+            "github": "github" 
         } , 
         {
             "name": "name" , 
             "sub": "sub" , 
             "desc": "desc" , 
-            "github": "github" , 
-            "blog": "blog"
+            "github": "github"
         } , 
         {
             "name": "name" , 
             "sub": "sub" , 
             "desc": "desc" , 
-            "github": "github" , 
-            "blog": "blog"
+            "github": "github" 
         } , 
         {
             "name": "name" , 
             "sub": "sub" , 
             "desc": "desc" , 
-            "github": "github" , 
-            "blog": "blog"
+            "github": "github" 
         } 
     ]
 }
