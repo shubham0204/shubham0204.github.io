@@ -1,37 +1,97 @@
 {
-    "description": "Helping startups and individuals build ML features in their Android apps | Writes ML stories on Medium | Freelancing for Android and ML | ML in Rust, C and C++" , 
+    "desc": {
+        "main": "Starting as an Android developer back in 2017, I am a passionate developer specializing in deployment of ML models in Android apps. Alongside development, I'm an active member on StackOverflow and frequent writer on Medium, writing primarily on ML, Math and Android. Lately, I am exploring ML with Rust, C and C++ alongside backend technologies in Java/Kotlin. <br><br> I am a firm believer of simplicity and beauty especially while writing code." , 
+        "projects": "Simple, high-quality projects with open-source software" , 
+        "blogs": "Topics spanning ML, Mathematics and Android Development" , 
+        "work_exp": "Working with Android, ML frameworks and backend technologies" 
+    } , 
+    "education": [
+        {
+            "school": "Pune Institute of Computer Technology" , 
+            "duration": "Jun 2021 - May 2025" , 
+            "course": "Bachelors in Computer Engineering" ,
+            "desc": "Coursework includes object-oriented programming, computer networks, low-level programming, DBMS, data science and data-structures"
+        }
+    ] ,
     "blogs": [
         {
-            "title": "first-blog-title-1" , 
-            "url": "https://medium.com"
+            "title": "Using C/C++ in Android: A Comprehensive Guide For Beginners" , 
+            "url": "https://proandroiddev.com/using-c-c-in-android-a-comprehensive-guide-for-beginners-8a870cf3dba6"
         } , 
         {
-            "title": "first-blog-title-2" , 
-            "url": "https://medium.com"
+            "title": "Building A Cross-Platform TFIDF Text Summarizer In Rust" , 
+            "url": "https://towardsdatascience.com/building-a-cross-platform-tfidf-text-summarizer-in-rust-7b05938f4507"
         } , 
         {
-            "title": "first-blog-title-3" , 
-            "url": "https://medium.com"
+            "title": "Kernels: Everything You Need to Know" , 
+            "url": "https://towardsdatascience.com/kernels-everything-you-need-to-know-f5d255d95785"
+        } ,
+        {
+            "title": "Principal Component Analysis: Everything You Need To Know" , 
+            "url": "https://towardsdatascience.com/principal-component-analysis-everything-you-need-to-know-5f834c9eaa83"
+        } ,
+        {
+            "title": "Deploying Scikit-Learn Models In Android Apps With ONNX" , 
+            "url": "https://towardsdatascience.com/deploying-scikit-learn-models-in-android-apps-with-onnx-b3adabe16bab"
         } 
     ] , 
     "work_experience": [
         {
+            "designation": "Project Intern" , 
+            "duration": "Jan 2024 - Ongoing" ,
+            "org": "NICE Systems" ,
+            "desc": ""
+        } ,
+        {
+            "designation": "Machine Learning Intern" , 
+            "duration": "Sep 2023 - Jan 2024" ,
+            "org": "Transvitals private limited" ,
+            "desc": "Developed ML inference systems for physiological data"
+        } ,
+        {
+            "designation": "(Freelance) Machine Learning Intern" , 
+            "duration": "Jan 2023 - Mar 2023" ,
+            "org": "DATASMITH AI SOLUTIONS PVT. LTD." ,
+            "desc": ""
+        } ,
+        {
+            "designation": "(Freelance) Android + ML Developer" , 
+            "duration": "Jan 2023 - Feb 2023" ,
+            "org": "Tootl Media And Technologies" ,
+            "desc": "Deployed a custom trained TF Object Detection model in an Android annotated with labels for determining the age and gender of customers in a supermarket"
+        } , 
+        {
+            "designation": "(Freelance) Python Developer" , 
+            "duration": "Mar 2020 - Jun 2023" ,
+            "org": "parkingaccess.com" ,
+            "desc": "Developed a system for determining similarity between two given texts, using Word2Vec. The system's performance was improved with just-in-compilation (accomplished with Numba) and multiprocessing in Python"
+        } ,
+        {
+            "designation": "Android + ML Developer" , 
+            "duration": "Mar 2020 - Jun 2023" ,
+            "org": "ClearSky Edge AI" ,
+            "desc": "Built a speech-to-text app that would record calls automatically in an Android app and transcribe them as meeting notes"
+        } , 
+        {
             "designation": "Android Development Intern" , 
             "duration": "Apr 2020 - Jun 2020" ,
+            "org": "AjnaLens" ,
             "desc": "Worked as an Android Development Intern with AjnaLens, a tech startup that creates augmented reality headsets for use in education and defence. Integrated various ML models in Android apps and also improved their efficiency for Android apps. Worked with 3rd-party libraries that would integrate a hardware component with an Android app"
-        } , 
-        {
-            "designation": "Android + ML Developer" , 
-            "duration": "Mar 2020 - Jun 2023" ,
-            "desc": "Built a speech-to-text app that would record calls automatically in an Android app and transcribe them as meeting notes"
-        } , 
-        {
-            "designation": "Android + ML Developer" , 
-            "duration": "Mar 2020 - Jun 2023" ,
-            "desc": "Built a speech-to-text app that would record calls automatically in an Android app and transcribe them as meeting notes"
         } 
     ] , 
     "projects" : [
+        {
+            "name": "Face Recognition and Classification With FaceNet On Android" , 
+            "sub": "Kotlin, Jetpack Compose, CameraX, TF Lite, MLKit and Coroutines" , 
+            "desc": "On-device face recognition with FaceNet and TF Lite. It uses images stored on the device's storage and identifies subjects from the camera preview. It uses an optimized pipeline written in C++ to process embeddings and display results" , 
+            "github": "https://github.com/shubham0204/FaceRecognition_With_FaceNet_Android" 
+        } , 
+        {
+            "name": "Age + Gender Estimation on Android with TensorFlow Lite" , 
+            "sub": "TensorFlow (Lite), Kotlin" , 
+            "desc": "On-device age and gender estimation from user-selected images, with a Keras model designed and trained on a Google Colab notebook" , 
+            "github": "https://github.com/shubham0204/Age-Gender_Estimation_TF-Android" 
+        } ,
         {
             "name": "postagger.rs" , 
             "sub": "Rust, JNI, Java and C" , 
@@ -39,28 +99,40 @@
             "github": "https://github.com/shubham0204/postagger.rs" 
         } , 
         {
-            "name": "name" , 
-            "sub": "sub" , 
-            "desc": "desc" , 
-            "github": "github" 
+            "name": "glove.c" , 
+            "sub": "C, JNI and Python" , 
+            "desc": "A port of GloVe word embeddings written in C, with wrappers in Java and Python. It uses a hashtable with open-chaining to store (word,index) pairs and provides methods for comparing semantic similarity between two words using cosine and L2-norm" , 
+            "github": "https://github.com/shubham0204/glove.c" 
         } , 
         {
-            "name": "name" , 
-            "sub": "sub" , 
-            "desc": "desc" , 
-            "github": "github"
+            "name": "tfidf-summarizer.rs" , 
+            "sub": "Rust, JNI, Kotlin and C" , 
+            "desc": "Implementation of an extractive text summarization system in Rust, which uses TF-IDF scores of words present in the text to rank sentences and generate a summary. It has wrappers in C and Android, and can use the Rayon crate to generate summaries by utilizing multiple CPU cores" , 
+            "github": "https://github.com/shubham0204/tfidf-summarizer.rs"
         } , 
         {
-            "name": "name" , 
-            "sub": "sub" , 
-            "desc": "desc" , 
-            "github": "github" 
-        } , 
+            "name": "Backend for a Blogpost App" , 
+            "sub": "Python, FastAPI and Docker Compose" , 
+            "desc": "A set of REST APIs built in FastAPI for a blogpost application. It includes MySQL database connectivity, deployment with Docker Compose, rate limiting and JWT authentication." , 
+            "github": "https://github.com/shubham0204/blogpost-backend" 
+        } ,
         {
-            "name": "name" , 
-            "sub": "sub" , 
-            "desc": "desc" , 
-            "github": "github" 
+            "name": "InC Project Management Backend" , 
+            "sub": "Kotlin, Ktor and Docker Compose" , 
+            "desc": "InC is an annual technical exhibition hosted by PICT where students showcase their technical projects to a bench of judges. We built a backend with Ktor and MySQL which provides useful REST services to organizers, such like checking team-escort allotment and team-judge allocation, that were initially carried out in spread-sheets." , 
+            "github": "https://github.com/Advait0801/INC-DBMS-Project/tree/backend" 
+        } ,
+        {
+            "name": "Decoder-only Transformer for Language Modelling in PyTorch" , 
+            "sub": "Python, PyTorch, FastAPI and Streamlit" , 
+            "desc": "A decoder-only transformer (auto-regressive) built from scratch in PyTorch and trained on the WikiHow dataset for language generation. The model was deployed with FastAPI and Streamlit, inspired from karpathy/nanoGPT" , 
+            "github": "https://github.com/shubham0204/language-modelling-with-pytorch" 
+        } ,
+        {
+            "name": "Monocular Depth Estimation using MiDaS in Android" , 
+            "sub": "Android, TensorFlow Lite" , 
+            "desc": "An Android app which uses the MiDaS model to perform monocular depth estimation on raw camera frames" , 
+            "github": "https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android" 
         } 
     ]
 }

@@ -3,15 +3,16 @@ async function loadPageData() {
     const json = await response.json()
 
     loadBlogs(json.blogs)
-    loadDescription(json.description)
     loadProjects(json.projects)
     loadWorkExperience(json.work_experience)
+    loadEducation(json.education)
 
-}
+    document.getElementById("profile-desc-blogs").innerHTML = json.desc.blogs
+    document.getElementById("profile-desc-projects").innerHTML = json.desc.projects
+    document.getElementById("profile-desc-work-exp").innerHTML = json.desc.work_exp
+    document.getElementById("profile-desc-main").innerHTML = json.desc.main
 
-function loadDescription(description) {
-    document.getElementById("profile-description")
-        .innerHTML = description
+
 }
 
 function loadBlogs(blogs) {
@@ -21,6 +22,18 @@ function loadBlogs(blogs) {
         li.innerHTML = getBlogTemplate(blog.title, blog.url)
         ul.appendChild(li)
     })
+}
+
+function loadEducation( education ) {
+    let divHtml = ''
+    for (i = 0; i < education.length; i++) {
+        divHtml += getEducationtemplate(
+            education[i].school,
+            education[i].desc,
+            education[i].course,
+            education[i].duration)
+    }
+    document.getElementById("profile-education").innerHTML = divHtml
 }
 
 function loadProjects(projects) {
@@ -44,26 +57,48 @@ function loadWorkExperience(work_experience) {
         divHtml += getWorkExperienceTemplate(
             work_experience[i].designation,
             work_experience[i].duration,
-            work_experience[i].desc
+            work_experience[i].desc , 
+            work_experience[i].org
         )
     }
     console.log(divHtml)
     document.getElementById("profile-work-experience").innerHTML = divHtml
 }
 
+function getEducationtemplate(
+    edu_school_name , 
+    edu_desc , 
+    edu_course , 
+    edu_duration
+) {
+    return `
+    <div class="row justify-content-center my-2">
+            <div class="card" style="width:75%; height:100%;">
+                <div class="card-body">
+                    <h5 class="card-title">${edu_course}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">${edu_school_name}</h5>
+                    <p class="card-text">${edu_desc}</p>
+                    <p class="card-text"><small class="text-body-secondary">${edu_duration}</small></p>
+                </div>  
+            </div>
+   </div>`
+}
+
 function getWorkExperienceTemplate(
     exp_designation,
     exp_duration,
-    exp_description
+    exp_description,
+    exp_org
 ) {
     return `
     <div class="row justify-content-center my-2">
             <div class="card" style="width:75%; height:100%;">
                 <div class="card-body">
                     <h5 class="card-title">${exp_designation}</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">${exp_duration}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">${exp_org}</h5>
                     <p class="card-text">${exp_description}</p>
-                </div>
+                    <p class="card-text"><small class="text-body-secondary">${exp_duration}</small></p>
+                </div>  
             </div>
    </div>`
 }
@@ -75,11 +110,11 @@ function getProjectTemplate(
     project_github_url,
 ) {
     return `<div class="card shadow-sm border-light rounded" style="width:100%; height:100%;">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">${project_name}</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">${project_subtitle}</h5>
-                            <p class="card-text">${project_description}</p>
-                            <a href="${project_github_url}" class="card-link">GitHub</a>
+                        <p class="card-text">${project_description}</p>
+                        <a href="${project_github_url}" class="mt-auto card-link text-info">GitHub</a>
                     </div>
                 </div>`
 }

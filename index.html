@@ -2,29 +2,62 @@
 <html lang="en">
 
 <head>
+    <!-- SEO meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script type="text/javascript" src="main.js"></script>
+    <meta name="description" content="Profile of Shubham Panchal - Android, ML and Backend Developer">
+    <meta name="robots" content="follow, index">
+
+    <title>Shubham Panchal's Profile</title>
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+
+    <!-- Bootstrap stylesheet from CDN -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+
+    <!-- Google Fonts stylesheet for 'Inter' -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=VT323&display=swap');
+        body {
+            --bs-font-sans-serif: 'Inter', sans-serif;
+            --bs-body-font-family: var(--bs-font-sans-serif);
+            --bs-font-monospace: 'VT323', monospace;
+        }
+    </style>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body onload="loadPageData()">
+<body onload="loadPageData()" class="bg-light">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
+    <!-- Bootstrap scripts from CDN -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
 
     <!-- Navbar holding contact links -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div 
+                class="collapse navbar-collapse" 
+                id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/shubham0204">GitHub</a>
@@ -38,61 +71,147 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://topmate.io/shubham_panchal">Topmate</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://stackexchange.com/users/13120333/shubham-panchal">StackExchange</a>
+                    </li>
                 </ul>
+                <span class="navbar-text"><i class="bi bi-geo-alt"></i>Pune, Maharashtra, India</span>
+                <span class="navbar-text" style="margin-left: 2em;">
+                    <i class="bi bi-envelope-at"></i>
+                    <a href="mailto:panchalshubhamdev@gmail.com"> panchalshubhamdev@gmail.com</a>
+                </span>
             </div>
         </div>
     </nav>
 
-    <center>
-        <img src="resources/profile-picture.jpg" class="rounded-circle" style="width: 10%; height: 10%;"
+    <!-- Name, Banner and Profile Picture -->
+    <!-- Photo by Pixabay: https://www.pexels.com/photo/calm-body-of-water-during-sunset-434551/-->
+    <div class="container-fluid p-5 shadow-sm" 
+        style="background-image: url('resources/banner.jpg');
+               background-size: cover;
+               object-fit: cover;
+               object-position: 10% 50%;">
+        <img src="resources/profile-picture.jpg" class="img-fluid rounded-circle my-5" style="max-width: 8em;"
             alt="Profile Picture">
-    </center>
-
-    <center>
-        <h1>Shubham Panchal</h1>
-        <p id="profile-description">
+        <h1 class="display-2 my-3" style="color: white;">Shubham Panchal</h1>
+        <p id="profile-desc-main" style="color: white;">
             <!-- Dynamically loaded by script -->
         </p>
-    </center>
-
-    <hr>
-    <center>
-        <h1>Work Experience</h1>
-    </center>
-    <div class="container" id="profile-work-experience">
-        <!-- Dynamically loaded by script -->
     </div>
 
-
-    <hr>
-    <center>
-        <h1>Projects</h1>
-    </center>
-    <div class="row row-cols-1 row-cols-md-2 g-5 mx-5" id="profile-projects">
-        <!-- Dynamically loaded by script -->
-    </div>
-    <center>
-        <button type="button" class="btn btn-primary btn-lg my-3">View all projects on GitHub</button>
-    </center>
-
-
-    <hr>
-    <center>
-        <h1>Blogs</h1>
-    </center>
-    <div class="list-group justify-content-center align-items-center">
-        <ul id="profile-blogs-list">
+    <!-- Work Experience -->
+    <div class="container my-5">
+        <center>
+            <h1 class="display-6">Work Experience</h1>
+            <p><small class="text-body-secondary" id="profile-desc-work-exp"></small></p>
+        </center>
+        <div class="container" id="profile-work-experience">
             <!-- Dynamically loaded by script -->
-        </ul>
+        </div>
     </div>
-    <center>
-        <button type="button" class="btn btn-primary btn-lg my-3">View all blogs on Medium</button>
-    </center>
 
+    <!-- Education -->
+    <div class="container my-5">
+        <center>
+            <h1 class="display-6">Education</h1>
+        </center>
+        <div class="container" id="profile-education">
+            <!-- Dynamically loaded by script -->
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container my-5">
+        <center>
+            <h1 class="display-6">Projects</h1>
+            <p><small class="text-body-secondary" id="profile-desc-projects"></small></p>
+        </center>
+        <div class="row row-cols-1 row-cols-md-2 g-4 mx-5" id="profile-projects">
+            <!-- Dynamically loaded by script -->
+        </div>
+        <center>
+            <button 
+                type="button" 
+                class="btn btn-primary btn-lg my-3"
+                onclick="window.open( 'https://github.com/shubham0204' , '_blank' )">
+                View all projects on GitHub <i class="bi bi-box-arrow-up-right"></i>
+            </button>
+        </center>
+    </div>
+
+    <!-- Forums and Mentoring -->
+    <div class="container my-5">
+        <center>
+            <h1 class="display-6">Forums and Mentoring</h1>
+            <p><small class="text-body-secondary">Answering questions and mentoring</small></p>
+        </center>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width:100%; height:100%;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">StackOverflow</h5>
+                        <p class="card-text">
+                            Answering questions on TensorFlow, Android and Python on the world's most popular website
+                            for programmers. Moreover, I'm also an active member on the data science community.
+                            My answers have gathered 759K+ views on both communities.
+                        </p>
+                        <p align="right">
+                            <a href="https://stackoverflow.com/users/13546426/shubham-panchal">
+                                <img src="https://stackoverflow.com/users/flair/13546426.png" width="208" height="58" alt="profile for Shubham Panchal at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Shubham Panchal at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                            </a>
+                        </p>
+                        
+                        <a href="https://stackexchange.com/users/13120333/shubham-panchal" 
+                            class="mt-auto card-link text-info">
+                            View StackExchange Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:100%; height:100%;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Topmate</h5>
+                        <p class="card-text">
+                            Topmate is a platform for mentors to conduct one-to-one sessions for students and professionals on various topics. I provide sessions on how to learn Android app development or solving doubts on ML and mathematics. You can have a quick chat or 1/2 hr session with me for sharing thoughts quickly or have a brief discussion.
+                        </p>
+                        <a href="https://topmate.io/shubham_panchal" 
+                        class="mt-auto card-link text-info">Book a session on Topmate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blogs -->
+    <!-- Open link in new tab on button click: 
+        https://stackoverflow.com/questions/2324169/how-do-you-make-an-html-button-behave-just-like-a-hyperlink
+    -->
+    <div class="container my-5">
+        <center>
+            <h1 class="display-6">Blogs</h1>
+            <p><small class="text-body-secondary" id="profile-desc-blogs"></small></p>
+        </center>
+        <div class="list-group justify-content-center align-items-center">
+            <ul id="profile-blogs-list">
+                <!-- Dynamically loaded by script -->
+            </ul>
+        </div>
+        <center>
+            <button 
+                type="button" 
+                class="btn btn-primary btn-lg my-3"
+                onclick="window.open( 'https://equipintelligence.medium.com/' , '_blank' )">
+                View all blogs on Medium <i class="bi bi-box-arrow-up-right"></i>
+            </button>
+        </center>
+    </div>
+
+    <!-- Website footer -->
     <hr>
     <center>
         <small>
-            Made with 💖 by Shubham Panchal
+            Hand-made with 💖 by Shubham Panchal (without LLMs)
             <br>
             with HTML and Bootstrap 5.3
         </small>
