@@ -31,9 +31,45 @@
             "url": "https://towardsdatascience.com/principal-component-analysis-everything-you-need-to-know-5f834c9eaa83"
         } ,
         {
+            "title": "Empirical Distribution: Everything You Need To Know" , 
+            "url": "https://towardsdatascience.com/understanding-empirical-distributions-ed131de5f3df"
+        } , 
+        {
             "title": "Deploying Scikit-Learn Models In Android Apps With ONNX" , 
             "url": "https://towardsdatascience.com/deploying-scikit-learn-models-in-android-apps-with-onnx-b3adabe16bab"
-        } 
+        } ,
+        {
+            "title": "No, Kernels & Filters Are Not The Same" , 
+            "url": "https://towardsdatascience.com/no-kernels-filters-are-not-the-same-b230ec192ac9"
+        } , 
+        {
+            "title": "Creating Desktop Apps For TensorFlow Models With Qt" , 
+            "url": "https://medium.com/geekculture/creating-desktop-apps-for-tensorflow-with-qt-7b23d57c6557"
+        } , 
+        {
+            "title": "Chaquopy: Using Python In Android Apps" , 
+            "url": "https://proandroiddev.com/chaquopy-using-python-in-android-apps-dd5177c9ab6b"
+        } , 
+        {
+            "title": "Managing Deep Learning Models Easily With TOML Configurations" , 
+            "url": "https://towardsdatascience.com/managing-deep-learning-models-easily-with-toml-configurations-fb680b9deabe"
+        } , 
+        {
+            "title": "Accessing App Usage History In Android" , 
+            "url": "https://proandroiddev.com/accessing-app-usage-history-in-android-79c3af861ccf#6224"
+        } , 
+        {
+            "title": "Deploying Pretrained TF Object Detection Models on Android" , 
+            "url": "https://towardsdatascience.com/deploying-pretrained-tf-object-detection-models-on-android-25c3de92caab"
+        } , 
+        {
+            "title": "Demystifying Monte Carlo Integration" , 
+            "url": "https://www.cantorsparadise.com/demystifying-monto-carlo-integration-7c9bd0e37689"
+        } , 
+        {
+            "title": "Demystifying The Moore-Penrose Generalized Inverse" , 
+            "url": "https://www.cantorsparadise.com/demystifying-the-moore-penrose-generalized-inverse-a1b989a1dd49"
+        }
     ] , 
     "work_experience": [
         {
