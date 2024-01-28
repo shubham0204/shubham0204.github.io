@@ -11,8 +11,6 @@ async function loadPageData() {
     document.getElementById("profile-desc-projects").innerHTML = json.desc.projects
     document.getElementById("profile-desc-work-exp").innerHTML = json.desc.work_exp
     document.getElementById("profile-desc-main").innerHTML = json.desc.main
-
-
 }
 
 function loadBlogs(blogs) {
@@ -109,12 +107,12 @@ function getProjectTemplate(
     project_description,
     project_github_url,
 ) {
-    return `<div class="card shadow-sm border-light rounded" style="width:100%; height:100%;">
+    return `<div class="card shadow-sm border-light rounded hoverable-card" style="width:100%; height:100%;">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">${project_name}</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">${project_subtitle}</h5>
                         <p class="card-text">${project_description}</p>
-                        <a href="${project_github_url}" class="mt-auto card-link text-info">GitHub</a>
+                        <a href="${project_github_url}" class="mt-auto"><i class="bi bi-github"></i></a>
                     </div>
                 </div>`
 }
