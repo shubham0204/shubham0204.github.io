@@ -1,7 +1,7 @@
 {
     "desc": {
-        "main": "Starting as an Android developer back in 2017, I am a passionate developer specializing in deployment of ML models in Android apps. Alongside development, I'm an active member on StackOverflow and frequent writer on Medium, writing primarily on ML, Math and Android. Lately, I am exploring ML with Rust, C and C++ alongside backend technologies in Java/Kotlin. <br><br> I am a firm believer of simplicity and beauty especially while writing code." , 
-        "projects": "Simple, high-quality projects with open-source software" , 
+        "main": "Starting as an Android developer back in 2017, I am a passionate developer specializing in deployment of ML models in Android apps. Alongside development, I'm an active member on StackOverflow and frequent writer on Medium, writing primarily on ML, Math and Android. Lately, I am exploring ML with Rust, C and C++ alongside backend technologies in Java/Kotlin. <br><br> I adore simplicity and conciseness while developing software." , 
+        "projects": "High-quality projects with open-source software" , 
         "blogs": "Topics spanning ML, Mathematics and Android Development" , 
         "work_exp": "Working with Android, ML frameworks and backend technologies" 
     } , 
@@ -85,13 +85,13 @@
         {
             "designation": "Machine Learning Intern" , 
             "duration": "Sep 2023 - Jan 2024" ,
-            "org": "Transvitals private limited" ,
+            "org": "Transvitals Pvt. Ltd." ,
             "desc": "Developed ML inference systems for physiological data"
         } ,
         {
             "designation": "(Freelance) Machine Learning Intern" , 
             "duration": "Jan 2023 - Mar 2023" ,
-            "org": "DATASMITH AI SOLUTIONS PVT. LTD." ,
+            "org": "DataSmith AI Solutions Pvt. Ltd." ,
             "desc": ""
         } ,
         {
