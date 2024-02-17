@@ -133,6 +133,11 @@
             "github": "https://github.com/shubham0204/Age-Gender_Estimation_TF-Android" 
         } ,
         {
+            "name": "Depth-Anything Android App" , 
+            "sub": "Kotlin, ONNX Runtime" , 
+            "desc": "Inference of the popular Depth-Anything model on Android, using ONNX Runtime. Depth-Anything is a SOTA ML model for monocular depth-estimation from images."
+        } ,
+        {
             "name": "postagger.rs" , 
             "sub": "Rust, JNI, Java and C" , 
             "desc": "NLTK inspired Parts-of-Speech Tagger (Perceptron Tagger) in Rust, with wrappers in Java and C" , 
