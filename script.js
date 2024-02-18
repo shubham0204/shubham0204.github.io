@@ -73,7 +73,7 @@ function getEducationtemplate(
     <div class="row justify-content-center my-2">
             <div class="card" style="width:75%; height:100%;">
                 <div class="card-body">
-                    <h5 class="card-title">${edu_course}</h5>
+                    <h5 class="card-title fs-4">${edu_course}</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">${edu_school_name}</h5>
                     <p class="card-text">${edu_desc}</p>
                     <p class="card-text"><small class="text-body-secondary">${edu_duration}</small></p>
@@ -109,9 +109,9 @@ function getProjectTemplate(
 ) {
     return `<div class="card shadow-sm border-light rounded hoverable-card" style="width:100%; height:100%;">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">${project_name}</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">${project_subtitle}</h5>
-                        <p class="card-text">${project_description}</p>
+                        <h5 class="card-title fs-4">${project_name}</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary fs-6"><small>${project_subtitle}</small></h5>
+                        <p class="card-text fs-6">${project_description}</p>
                         <a href="${project_github_url}" class="mt-auto"><i class="bi bi-github"></i></a>
                     </div>
                 </div>`
