@@ -6,7 +6,7 @@ A portfolio website built with HTML-5 and [Bootstrap 5.3](https://getbootstrap.c
 
 - Simple, interpretable, reusable codebase
 - Minimal design
-- Configuration driven
+- Configuration-driven
 
 ### Project Structure
 

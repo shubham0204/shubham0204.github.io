@@ -2,68 +2,67 @@ async function loadPageData() {
     const response = await fetch("/config.json")
     const json = await response.json()
 
-    loadBlogs(json.blogs)
-    loadProjects(json.projects)
-    loadWorkExperience(json.work_experience)
-    loadEducation(json.education)
+    load_blogs(json.blogs)
+    load_projects(json.projects)
+    load_work_experience(json.work_experience)
+    load_education(json.education)
 
-    document.getElementById("profile-desc-blogs").innerHTML = json.desc.blogs
-    document.getElementById("profile-desc-projects").innerHTML = json.desc.projects
-    document.getElementById("profile-desc-work-exp").innerHTML = json.desc.work_exp
-    document.getElementById("profile-desc-main").innerHTML = json.desc.main
+    document.querySelector("#profile-desc-blogs").innerHTML = json.desc.blogs
+    document.querySelector("#profile-desc-projects").innerHTML = json.desc.projects
+    document.querySelector("#profile-desc-work-exp").innerHTML = json.desc.work_exp
+    document.querySelector("#profile-desc-main").innerHTML = json.desc.main
 }
 
-function loadBlogs(blogs) {
-    const ul = document.getElementById("profile-blogs-list")
+function load_blogs(blogs) {
+    const ul = document.querySelector("#profile-blogs-list")
     blogs.forEach(blog => {
         const li = document.createElement("li")
-        li.innerHTML = getBlogTemplate(blog.title, blog.url)
+        li.innerHTML = get_blog_template(blog.title, blog.url)
         ul.appendChild(li)
     })
 }
 
-function loadEducation( education ) {
+function load_education( education ) {
     let divHtml = ''
-    for (i = 0; i < education.length; i++) {
-        divHtml += getEducationtemplate(
-            education[i].school,
-            education[i].desc,
-            education[i].course,
-            education[i].duration)
-    }
-    document.getElementById("profile-education").innerHTML = divHtml
+    education.forEach( (education_element) => {
+        divHtml += get_education_template(
+            education_element.school,
+            education_element.desc,
+            education_element.course,
+            education_element.duration)
+    } )
+    document.querySelector("#profile-education").innerHTML = divHtml
 }
 
-function loadProjects(projects) {
+function load_projects(projects) {
     let divHtml = ''
-    for (i = 0; i < projects.length; i++) {
+    projects.forEach( (project_element) => {
         divHtml += `
         <div class="col">
-        ${getProjectTemplate(
-            projects[i].name,
-            projects[i].sub,
-            projects[i].desc,
-            projects[i].github)}
+        ${get_project_template(
+            project_element.name,
+            project_element.sub,
+            project_element.desc,
+            project_element.github)}
         </div>`
-    }
-    document.getElementById("profile-projects").innerHTML = divHtml
+    } )
+    document.querySelector("#profile-projects").innerHTML = divHtml
 }
 
-function loadWorkExperience(work_experience) {
+function load_work_experience(work_experience) {
     let divHtml = ''
-    for (i = 0; i < work_experience.length; i++) {
-        divHtml += getWorkExperienceTemplate(
-            work_experience[i].designation,
-            work_experience[i].duration,
-            work_experience[i].desc , 
-            work_experience[i].org
+    work_experience.forEach( (work_experience_element) => {
+        divHtml += get_work_experience_template(
+            work_experience_element.designation,
+            work_experience_element.duration,
+            work_experience_element.desc , 
+            work_experience_element.org
         )
-    }
-    console.log(divHtml)
-    document.getElementById("profile-work-experience").innerHTML = divHtml
+    } )
+    document.querySelector("#profile-work-experience").innerHTML = divHtml
 }
 
-function getEducationtemplate(
+function get_education_template(
     edu_school_name , 
     edu_desc , 
     edu_course , 
@@ -82,7 +81,7 @@ function getEducationtemplate(
    </div>`
 }
 
-function getWorkExperienceTemplate(
+function get_work_experience_template(
     exp_designation,
     exp_duration,
     exp_description,
@@ -101,7 +100,7 @@ function getWorkExperienceTemplate(
    </div>`
 }
 
-function getProjectTemplate(
+function get_project_template(
     project_name,
     project_subtitle,
     project_description,
@@ -117,7 +116,7 @@ function getProjectTemplate(
                 </div>`
 }
 
-function getBlogTemplate(
+function get_blog_template(
     blog_title,
     blog_url
 ) {
