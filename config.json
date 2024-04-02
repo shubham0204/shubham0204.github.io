@@ -156,6 +156,12 @@
             "github": "https://github.com/shubham0204/tfidf-summarizer.rs"
         } , 
         {
+            "name": "Full Text Search in Java" , 
+            "sub": "Java" , 
+            "desc": "A full-text-search command-line utility built for PDFs, DOCX using inverted index, that given a query, returns a list of documents containing the query tokens in O(1) time" , 
+            "github": "https://github.com/shubham0204/full-text-search"
+        } ,
+        {
             "name": "Backend for a Blogpost App" , 
             "sub": "Python, FastAPI and Docker Compose" , 
             "desc": "A set of REST APIs built in FastAPI for a blogpost application. It includes MySQL database connectivity, deployment with Docker Compose, rate limiting and JWT authentication." , 
