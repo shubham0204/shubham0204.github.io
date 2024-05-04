@@ -15,6 +15,10 @@
     ] ,
     "blogs": [
         {
+            "title": "WebAssembly: Everything You Need To Know" , 
+            "url": "https://levelup.gitconnected.com/webassembly-everything-you-need-to-know-d1eb0a162f20"
+        } ,
+        {
             "title": "On-Device Machine Learning In Android: Frameworks and Ecosystem" , 
             "url": "https://medium.com/proandroiddev/on-device-machine-learning-in-android-frameworks-and-ecosystem-888bc42a1d21"
         } , 
