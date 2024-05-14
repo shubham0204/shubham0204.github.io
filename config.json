@@ -81,12 +81,6 @@
     ] , 
     "work_experience": [
         {
-            "designation": "Project Intern" , 
-            "duration": "Jan 2024 - Ongoing" ,
-            "org": "NICE Systems" ,
-            "desc": ""
-        } ,
-        {
             "designation": "Machine Learning Intern" , 
             "duration": "Sep 2023 - Jan 2024" ,
             "org": "Transvitals Pvt. Ltd." ,
@@ -96,7 +90,7 @@
             "designation": "(Freelance) Machine Learning Intern" , 
             "duration": "Jan 2023 - Mar 2023" ,
             "org": "DataSmith AI Solutions Pvt. Ltd." ,
-            "desc": ""
+            "desc": "Conducted experiments on various approaches for gender/ethnicity detection from iris images (datasets like NDIRIS and GFI)"
         } ,
         {
             "designation": "(Freelance) Android + ML Developer" , 
@@ -106,15 +100,15 @@
         } , 
         {
             "designation": "(Freelance) Python Developer" , 
-            "duration": "Mar 2020 - Jun 2023" ,
+            "duration": "Jan 2023 - Feb 2023" ,
             "org": "parkingaccess.com" ,
             "desc": "Developed a system for determining similarity between two given texts, using Word2Vec. The system's performance was improved with just-in-compilation (accomplished with Numba) and multiprocessing in Python"
         } ,
         {
             "designation": "Android + ML Developer" , 
-            "duration": "Mar 2020 - Jun 2023" ,
+            "duration": "Mar 2022 - Jun 2022" ,
             "org": "ClearSky Edge AI" ,
-            "desc": "Built a speech-to-text app that would record calls automatically in an Android app and transcribe them as meeting notes"
+            "desc": "ClearSky is a Switzerland-based startup aiming to bring cloud/server-free ML-based services for customers. Built a speech-to-text app that would record calls automatically in an Android app and transcribe them as meeting notes"
         } , 
         {
             "designation": "Android Development Intern" , 
