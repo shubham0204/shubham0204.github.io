@@ -133,7 +133,14 @@
         {
             "name": "Depth-Anything Android App" , 
             "sub": "Kotlin, ONNX Runtime" , 
-            "desc": "Inference of the popular Depth-Anything model on Android, using ONNX Runtime. Depth-Anything is a SOTA ML model for monocular depth-estimation from images."
+            "desc": "Inference of the popular Depth-Anything model on Android, using ONNX Runtime. Depth-Anything is a SOTA ML model for monocular depth-estimation from images.",
+            "github": "https://github.com/shubham0204/Depth-Anything-Android"
+        } ,
+        {
+            "name": "Android-Document-QA" , 
+            "sub": "Kotlin, ObjectBox, Mediapipe" , 
+            "desc": "An Android app that performs document question-answering on-device, with a built-in vector database (ObjectBox), embedding model (Mediapipe) and Gemini API",
+            "github": "https://github.com/shubham0204/Android-Document-QA"
         } ,
         {
             "name": "postagger.rs" , 
