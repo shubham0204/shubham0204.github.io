@@ -15,6 +15,10 @@
     ] ,
     "blogs": [
         {
+            "title": "From Python To Android: HF Sentence Transformers (Embeddings)" , 
+            "url": "https://proandroiddev.com/from-python-to-android-hf-sentence-transformers-embeddings-1ecea0ce94d8"
+        } ,
+        {
             "title": "WebAssembly: Everything You Need To Know" , 
             "url": "https://levelup.gitconnected.com/webassembly-everything-you-need-to-know-d1eb0a162f20"
         } ,
@@ -129,6 +133,12 @@
             "sub": "TensorFlow (Lite), Kotlin" , 
             "desc": "On-device age and gender estimation from user-selected images, with a Keras model designed and trained on a Google Colab notebook" , 
             "github": "https://github.com/shubham0204/Age-Gender_Estimation_TF-Android" 
+        } ,
+        {
+            "name": "Sentence-Embeddings-Android" , 
+            "sub": "Kotlin, ONNX Runtime, Rust" , 
+            "desc": "Embeddings from sentence-transformers in Android - Uses all-MiniLM-L6-V2 model currently",
+            "github": "https://github.com/shubham0204/Depth-Anything-Android"
         } ,
         {
             "name": "Depth-Anything Android App" , 
