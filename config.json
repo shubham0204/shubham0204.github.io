@@ -85,28 +85,22 @@
     ] , 
     "work_experience": [
         {
+            "designation": "Project Intern",
+            "duration": "Jan 2024 - July 2024" ,
+            "org": "NICE Systems Ltd." ,
+            "desc": "- Developed a console-based application that notifies developers and QA testers of all impacted AIS entities when a certain AIS entity connected to them is modified<br>- Designed a dependency graph in Java that forms nodes from XML entities and reports impacted nodes by performing a DFS traversal on the graph from the nodes<br>- The program's design heavily utilized Java Collections, class inheritance and function overriding"
+        } ,
+        {
+            "designation": "Android Development Intern",
+            "duration": "May 2024 - Jun 2024" ,
+            "org": "Arcadia Hospitality" ,
+            "desc": "- Worked on a Java + XML Android project which is a hospitality solution (prototype stage) provided to the guests, managers and attendants of 5-star hotels<br>- Implemented filtering, pagination with RecyclerView and Firebase Realtime Database, along with Cloud Messaging for delivering notifications to attendants<br>- Added QR scanning capability and improved chat interface for app users"
+        } ,
+        {
             "designation": "Machine Learning Intern" , 
             "duration": "Sep 2023 - Jan 2024" ,
             "org": "Transvitals Pvt. Ltd." ,
-            "desc": "Developed ML inference systems for physiological data"
-        } ,
-        {
-            "designation": "(Freelance) Machine Learning Intern" , 
-            "duration": "Jan 2023 - Mar 2023" ,
-            "org": "DataSmith AI Solutions Pvt. Ltd." ,
-            "desc": "Conducted experiments on various approaches for gender/ethnicity detection from iris images (datasets like NDIRIS and GFI)"
-        } ,
-        {
-            "designation": "(Freelance) Android + ML Developer" , 
-            "duration": "Jan 2023 - Feb 2023" ,
-            "org": "Tootl Media And Technologies" ,
-            "desc": "Deployed a custom trained TF Object Detection model in an Android annotated with labels for determining the age and gender of customers in a supermarket"
-        } , 
-        {
-            "designation": "(Freelance) Python Developer" , 
-            "duration": "Jan 2023 - Feb 2023" ,
-            "org": "parkingaccess.com" ,
-            "desc": "Developed a system for determining similarity between two given texts, using Word2Vec. The system's performance was improved with just-in-compilation (accomplished with Numba) and multiprocessing in Python"
+            "desc": "- Studied the composition of an ECG signal and neurokit2 to extract features from the ECG signal<br>- Used existing pre-trained models for electrolyte and age estimation and deployed them on-device for an Android app with ONNX<br>- Built a model to predict sleep positions given accelerometer signals from a wrist-worn sensor"
         } ,
         {
             "designation": "Android + ML Developer" , 
@@ -127,12 +121,6 @@
             "sub": "Kotlin, Jetpack Compose, CameraX, TF Lite, MLKit and Coroutines" , 
             "desc": "On-device face recognition with FaceNet and TF Lite. It uses images stored on the device's storage and identifies subjects from the camera preview. It uses an optimized pipeline written in C++ to process embeddings and display results" , 
             "github": "https://github.com/shubham0204/FaceRecognition_With_FaceNet_Android" 
-        } , 
-        {
-            "name": "Age + Gender Estimation on Android with TensorFlow Lite" , 
-            "sub": "TensorFlow (Lite), Kotlin" , 
-            "desc": "On-device age and gender estimation from user-selected images, with a Keras model designed and trained on a Google Colab notebook" , 
-            "github": "https://github.com/shubham0204/Age-Gender_Estimation_TF-Android" 
         } ,
         {
             "name": "Sentence-Embeddings-Android" , 
@@ -163,13 +151,7 @@
             "sub": "C, JNI and Python" , 
             "desc": "A port of GloVe word embeddings written in C, with wrappers in Java and Python. It uses a hashtable with open-chaining to store (word,index) pairs and provides methods for comparing semantic similarity between two words using cosine and L2-norm" , 
             "github": "https://github.com/shubham0204/glove.c" 
-        } , 
-        {
-            "name": "tfidf-summarizer.rs" , 
-            "sub": "Rust, JNI, Kotlin and C" , 
-            "desc": "Implementation of an extractive text summarization system in Rust, which uses TF-IDF scores of words present in the text to rank sentences and generate a summary. It has wrappers in C and Android, and can use the Rayon crate to generate summaries by utilizing multiple CPU cores" , 
-            "github": "https://github.com/shubham0204/tfidf-summarizer.rs"
-        } , 
+        } ,
         {
             "name": "Full Text Search in Java" , 
             "sub": "Java" , 
@@ -193,12 +175,6 @@
             "sub": "Python, PyTorch, FastAPI and Streamlit" , 
             "desc": "A decoder-only transformer (auto-regressive) built from scratch in PyTorch and trained on the WikiHow dataset for language generation. The model was deployed with FastAPI and Streamlit, inspired from karpathy/nanoGPT" , 
             "github": "https://github.com/shubham0204/language-modelling-with-pytorch" 
-        } ,
-        {
-            "name": "Monocular Depth Estimation using MiDaS in Android" , 
-            "sub": "Android, TensorFlow Lite" , 
-            "desc": "An Android app which uses the MiDaS model to perform monocular depth estimation on raw camera frames" , 
-            "github": "https://github.com/shubham0204/Realtime_MiDaS_Depth_Estimation_Android" 
         } 
     ]
 }
