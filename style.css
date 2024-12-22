@@ -1,28 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=VT323&display=swap');
-
 body {
-    --bs-font-sans-serif: 'Inter', sans-serif;
-    --bs-body-font-family: var(--bs-font-sans-serif);
-    --bs-font-monospace: 'VT323', monospace;
+    font-family: Inter;
+    font-size: medium
 }
 
-.banner {
-    background-image: url('resources/banner.jpg');
-    background-size: cover;
-    object-fit: cover;
-    object-position: 100% 50%;
+li {
+    color: gray;
 }
 
-.hoverable-link:hover {
-    color: blue;
+:is(h1, h2, h3) {
+    font-family: JetBrains Mono;
 }
 
-.hoverable-card {
-    transition-timing-function: ease-in;
-    transition-duration: 100ms;
+.main {
+    width: 50%; 
+    text-align: justify;
 }
-
-.hoverable-card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+@media (max-width: 768px) {
+    .main {
+        width: 95%;
+    }
 }
